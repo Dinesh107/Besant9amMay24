@@ -149,25 +149,58 @@
 
 // }
 
-sum(2, 3, displayDom);
+// sum(2, 3, displayDom);
 
-function sum(x, y, myFunc) {
+// function sum(x, y, myFunc) {
 
-    let result = x + y;
+//     let result = x + y;
 
-    myFunc(result);
+//     myFunc(result);
+
+// }
+
+// function displayConsole(output) {
+
+//     console.log(output);
+
+// }
+
+// function displayDom(output) {
+
+//     document.getElementById("myLabel").innerHTML = output;
+
+// }
+
+// Array.ForEach ----> Executes a provided call back function once for each array elements
+
+
+
+let students = ["ganesh", "murugan", "karnan"];
+
+// let students = ["GANESH", "MURUGAN", "KARNAN"];    // ganesh murugan karnan
+
+// let students = ["GANESH", "MURUGAN", "KARNAN"];    // gANESH, mURUGAN, kARNAN
+
+// Print the elememts in the Document or website 
+
+students.forEach(capitilize);
+
+students.forEach(print);
+
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[2]);
+
+function capitilize(element, index, array) {
+
+ //         1                 K             +   arnan              =   Karnan
+     array[index] = element[0].toUpperCase() + element.substring(1);   
 
 }
 
-function displayConsole(output) {
+function print(element) {
 
-    console.log(output);
-
-}
-
-function displayDom(output) {
-
-    document.getElementById("myLabel").innerHTML = output;
+   console.log(element);
 
 }
 
