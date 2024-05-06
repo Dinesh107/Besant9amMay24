@@ -175,32 +175,88 @@
 
 
 
-let students = ["ganesh", "murugan", "karnan"];
+// let students = ["ganesh", "murugan", "karnan"];
 
-// let students = ["GANESH", "MURUGAN", "KARNAN"];    // ganesh murugan karnan
+// // let students = ["GANESH", "MURUGAN", "KARNAN"];    // ganesh murugan karnan
 
-// let students = ["GANESH", "MURUGAN", "KARNAN"];    // gANESH, mURUGAN, kARNAN
+// // let students = ["GANESH", "MURUGAN", "KARNAN"];    // gANESH, mURUGAN, kARNAN
 
-// Print the elememts in the Document or website 
+// // Print the elememts in the Document or website 
 
-students.forEach(capitilize);
+// students.forEach(capitilize);
 
-students.forEach(print);
+// students.forEach(print);
 
-// console.log(students[0]);
-// console.log(students[1]);
-// console.log(students[2]);
+// // console.log(students[0]);
+// // console.log(students[1]);
+// // console.log(students[2]);
 
-function capitilize(element, index, array) {
+// function capitilize(element, index, array) {
 
- //         1                 K             +   arnan              =   Karnan
-     array[index] = element[0].toUpperCase() + element.substring(1);   
+//  //         1                 K             +   arnan              =   Karnan
+//      array[index] = element[0].toUpperCase() + element.substring(1);   
 
-}
+// }
 
-function print(element) {
+// function print(element) {
 
-   console.log(element);
+//    console.log(element);
 
-}
+// }
+
+
+// let numbers = [1, 2, 3, 4, 5];
+
+// let squares = numbers.map(square);
+
+// squares.forEach(print);
+
+// function square(element) {
+
+//      return Math.pow(element, 2);
+
+// }
+
+
+
+// function print(element) {
+
+//     console.log(element);
+
+// }
+
+const onlineStore = new Map([
+
+    ["Redmi pro", 5000],
+    ["HP Laptop", 7000],
+    ["Backpack", 1000],
+    ["Formal Shoes", 1500],
+    ["Purse", 500]
+
+
+]);
+
+
+let shoppingCart = 0;
+
+// shoppingCart = shoppingCart + 1;
+
+// shoppingCart += onlineStore.get("HP Laptop");
+// shoppingCart += onlineStore.get("Backpack");
+
+onlineStore.set("water bottle", 300);
+onlineStore.delete("water bottle");
+
+console.log(onlineStore.has("Purse"));
+console.log(shoppingCart);
+
+console.log(onlineStore.size);
+
+onlineStore.forEach((value, key) => console.log(`${key}  ${value}`));
+
+
+
+
+
+
 
